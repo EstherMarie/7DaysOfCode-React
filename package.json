@@ -1,0 +1,44 @@
+{
+	"name": "7daysofcode-react",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"commit": "cz",
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"styled-components": "^5.3.5"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.33",
+		"@types/react-dom": "^17.0.10",
+		"@types/styled-components": "^5.1.24",
+		"@vitejs/plugin-react": "^1.0.7",
+		"cz-conventional-changelog": "3.3.0",
+		"eslint": "^8.12.0",
+		"eslint-config-prettier": "^8.5.0",
+		"husky": "^7.0.4",
+		"lint-staged": "^12.3.7",
+		"prettier": "^2.6.1",
+		"typescript": "^4.5.4",
+		"typescript-plugin-styled-components": "^2.0.0",
+		"vite": "^2.9.0"
+	},
+	"lint-staged": {
+		"*.js": "eslint --cache --fix",
+		"*.{js,css,md}": "prettier --write"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		},
+		"resolutions": {
+			"styled-components": "^5"
+		}
+	}
+}
