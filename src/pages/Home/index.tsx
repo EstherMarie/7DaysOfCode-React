@@ -7,7 +7,9 @@ export default function HomePage() {
 		<>
 			<GlobalStyle />
 			<Menu />
-			<AssinaturaNewsletter />
+			<main>
+				<AssinaturaNewsletter />
+			</main>
 		</>
 	);
 }
