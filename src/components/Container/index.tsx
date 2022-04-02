@@ -1,6 +1,10 @@
 import { Children } from 'react';
 import { StyledContainer } from './styled';
 
-export function Container({ children }) {
+interface ContainerProps {
+	children: React.ReactNode;
+}
+
+export function Container({ children }: ContainerProps) {
 	return <StyledContainer>{children}</StyledContainer>;
 }
