@@ -1,35 +1,39 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledMenu = styled.header`
-	display: flex;
-	justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 9000;
 
-	margin-top: 10.16px;
+  display: flex;
+  justify-content: space-between;
 
-	nav {
-		height: 100%;
-		display: flex;
-		align-items: flex-end;
-	}
+  margin-top: 10.16px;
+
+  nav {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
 `;
 
 export const StyledList = styled.ul`
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-	li a {
-		margin: 0 1rem;
-	}
+  li a {
+    margin: 0 1rem;
+  }
 
-	li:last-child {
-		font-weight: 600;
-		margin-right: 0;
-		margin-left: 38px;
-	}
+  li:last-child {
+    font-weight: 600;
+    margin-right: 0;
+    margin-left: 38px;
+  }
 
-	@media (max-width: 992px) {
-		li:nth-child(-n + 4) {
-			display: none;
-		}
-	}
+  @media (max-width: 992px) {
+    li:nth-child(-n + 4) {
+      display: none;
+    }
+  }
 `;

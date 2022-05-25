@@ -8,7 +8,7 @@ export function AssinaturaNewsletter() {
         <div className="text-area">
           <h1>
             <div className="sr-only">Casa Verde: </div>
-            <div>Sua casa com </div>as melhores plantas
+            <div>Sua casa com as</div>melhores plantas
           </h1>
           <p>
             Encontre aqui uma vasta seleção de plantas para decorar a sua casa e
