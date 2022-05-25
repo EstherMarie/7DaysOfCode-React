@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledNewsletter = styled.div`
+export const StyledNewsletter = styled.section`
   width: 585px;
   /* height: 462px; */
 
@@ -104,6 +104,7 @@ export const StyledNewsletter = styled.div`
     position: absolute;
     top: -10px;
     right: 425px;
+    z-index: -2;
 
     @media (max-width: 1919px) {
       content: "";
