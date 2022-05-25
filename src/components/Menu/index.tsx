@@ -8,7 +8,7 @@ export function Menu() {
     <StyledMenu>
       <Container>
         <h1>
-          <img src={LogoCasaVerde} alt="Casa Verde Logo" />
+          <img src={LogoCasaVerde} alt="Casa Verde" />
         </h1>
 
         <nav>

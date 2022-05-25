@@ -58,7 +58,7 @@ export const StyledNewsletter = styled.section`
 
       padding-left: 55px;
 
-      background-image: url("src/assets/mail.svg");
+      background-image: url("/assets/mail.svg");
       background-size: 21.57px 9.96px;
       background-repeat: no-repeat;
       background-position-x: 17.43px;

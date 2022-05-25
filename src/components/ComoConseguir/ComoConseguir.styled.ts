@@ -4,7 +4,7 @@ export const StyledComoConseguir = styled.section`
   width: 995px;
   height: 440px;
 
-  margin: 228px auto;
+  margin: 228px auto 44px;
   background-color: var(--white);
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
 
