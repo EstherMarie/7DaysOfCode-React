@@ -4,6 +4,8 @@ export const StyledOferta = styled.li`
   width: 380px;
   height: 200px;
 
+  background-color: var(--white);
+
   display: grid;
   grid-template-columns: 204px 1fr;
 

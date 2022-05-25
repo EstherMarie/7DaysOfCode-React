@@ -2,7 +2,7 @@ import { StyledComoConseguir } from "./ComoConseguir.styled";
 
 export function ComoConseguir() {
   return (
-    <StyledComoConseguir>
+    <StyledComoConseguir id="como-fazer">
       <div className="img-area"></div>
       <div className="text-area">
         <h2>

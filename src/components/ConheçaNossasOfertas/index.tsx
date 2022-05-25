@@ -4,7 +4,7 @@ import { produtos } from "../../data/produtos";
 
 export function ConheçaNossasOfertas() {
   return (
-    <StyledConheçaNossasOfertas>
+    <StyledConheçaNossasOfertas id="ofertas">
       <h2>
         <span>Conheça nossas </span>ofertas
       </h2>

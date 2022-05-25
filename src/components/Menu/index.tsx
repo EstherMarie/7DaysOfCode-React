@@ -7,9 +7,9 @@ export function Menu() {
   return (
     <StyledMenu>
       <Container>
-        <h1>
-          <img src={LogoCasaVerde} alt="Casa Verde" />
-        </h1>
+        <a href="#">
+          <img src={LogoCasaVerde} alt="Casa Verde Logo" />
+        </a>
 
         <nav>
           <StyledList>
@@ -20,13 +20,13 @@ export function Menu() {
               <a href="#ofertas">Ofertas</a>/
             </li>
             <li>
-              <a href="#depoimentos">Depoimentos</a>/
+              <a href="#">Depoimentos</a>/
             </li>
             <li>
-              <a href="#videos">Vídeos</a>/
+              <a href="#">Vídeos</a>/
             </li>
             <li>
-              <a href="#carrinho">Meu carrinho</a>
+              <a href="#">Meu carrinho</a>
             </li>
           </StyledList>
         </nav>
