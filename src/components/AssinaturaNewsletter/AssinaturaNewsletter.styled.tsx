@@ -9,7 +9,7 @@ export const StyledNewsletter = styled.section`
   .text-area {
     margin-bottom: 37px;
 
-    h2 {
+    h1 {
       div {
         margin-bottom: 12px;
 

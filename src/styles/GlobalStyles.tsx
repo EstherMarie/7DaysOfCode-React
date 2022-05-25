@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   * {
@@ -21,6 +21,12 @@ export default createGlobalStyle`
 
   html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: url('/assets/linhas.svg');
+    background-color: #f9f9f9;
   }
 
   .sr-only:not(:focus):not(:active) {

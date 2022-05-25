@@ -6,9 +6,10 @@ export function AssinaturaNewsletter() {
     <Container>
       <StyledNewsletter>
         <div className="text-area">
-          <h2>
+          <h1>
+            <div className="sr-only">Casa Verde: </div>
             <div>Sua casa com </div>as melhores plantas
-          </h2>
+          </h1>
           <p>
             Encontre aqui uma vasta seleção de plantas para decorar a sua casa e
             torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu
