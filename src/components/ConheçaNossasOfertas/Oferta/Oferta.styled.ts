@@ -56,7 +56,7 @@ export const StyledOferta = styled.li`
       color: var(--main-color);
 
       &::after {
-        content: url("/assets/seta.svg");
+        content: url("/assets/svg/seta.svg");
         padding-left: 25px;
       }
     }

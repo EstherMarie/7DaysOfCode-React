@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledMenu, StyledList } from "./Menu.styled";
-import LogoCasaVerde from "/assets/logo.svg";
+import LogoCasaVerde from "/assets/svg/logo.svg";
 import { Container } from "../Container";
 
 export function Menu() {

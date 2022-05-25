@@ -58,7 +58,7 @@ export const StyledNewsletter = styled.section`
 
       padding-left: 55px;
 
-      background-image: url("/assets/mail.svg");
+      background-image: url("/assets/svg/mail.svg");
       background-size: 21.57px 9.96px;
       background-repeat: no-repeat;
       background-position-x: 17.43px;
@@ -86,7 +86,7 @@ export const StyledNewsletter = styled.section`
   /* Aqui se iniciam as gambiarras... */
 
   &::before {
-    content: url("/assets/vector.svg");
+    content: url("/assets/svg/vector.svg");
     /* width: 1000px; */
     position: absolute;
     z-index: -100;
@@ -99,7 +99,7 @@ export const StyledNewsletter = styled.section`
   }
 
   &::after {
-    content: url("/assets/imagem-hero.svg");
+    content: url("/assets/svg/imagem-hero.svg");
     width: 787px;
     position: absolute;
     top: -10px;

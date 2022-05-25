@@ -25,7 +25,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: url('/assets/linhas.svg');
+    background: url('/assets/svg/linhas.svg');
     background-color: #f9f9f9;
   }
 

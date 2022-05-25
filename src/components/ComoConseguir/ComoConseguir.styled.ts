@@ -13,7 +13,7 @@ export const StyledComoConseguir = styled.section`
   .img-area {
     width: 585px;
     height: 100%;
-    background-image: url("/assets/image-3.png");
+    background-image: url("/assets/images/image-3.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
