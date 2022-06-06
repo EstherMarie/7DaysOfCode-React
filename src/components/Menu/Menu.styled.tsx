@@ -15,8 +15,10 @@ export const StyledMenu = styled.header<StyledMenuProps>`
   padding-top: 10.16px;
   padding-bottom: 10.16px;
 
+  transition: all 0.2s;
+
   border-bottom: ${(props) =>
-    props.hasScroll ? "1px solid rgba(32, 32, 32, 0.26)" : ""};
+    props.hasScroll ? "1px solid rgba(32, 32, 32, 0.16)" : ""};
 
   background-color: ${(props) => (props.hasScroll ? "var(--white)" : "")};
 
