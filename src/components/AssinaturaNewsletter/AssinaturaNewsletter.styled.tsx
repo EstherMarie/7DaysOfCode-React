@@ -4,7 +4,7 @@ export const StyledNewsletter = styled.section`
   width: 585px;
   /* height: 462px; */
 
-  margin-top: 151px;
+  margin-top: 210px;
 
   .text-area {
     margin-bottom: 37px;
@@ -102,7 +102,7 @@ export const StyledNewsletter = styled.section`
     content: url("/assets/svg/imagem-hero.svg");
     width: 787px;
     position: absolute;
-    top: -10px;
+    top: 0;
     right: 425px;
     z-index: -2;
 
