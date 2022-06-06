@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const StyledMenu = styled.header`
+interface StyledMenuProps {
+  hasScroll: boolean;
+}
+
+export const StyledMenu = styled.header<StyledMenuProps>`
   position: fixed;
   width: 100%;
   z-index: 9000;
@@ -8,7 +12,13 @@ export const StyledMenu = styled.header`
   display: flex;
   justify-content: space-between;
 
-  margin-top: 10.16px;
+  padding-top: 10.16px;
+  padding-bottom: 10.16px;
+
+  border-bottom: ${(props) =>
+    props.hasScroll ? "1px solid rgba(32, 32, 32, 0.26)" : ""};
+
+  background-color: ${(props) => (props.hasScroll ? "var(--white)" : "")};
 
   nav {
     height: 100%;

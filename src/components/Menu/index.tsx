@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { StyledMenu, StyledList } from "./Menu.styled";
 import LogoCasaVerde from "/assets/svg/logo.svg";
 import { Container } from "../Container";
 
 export function Menu() {
+  const [hasScroll, setHasScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setHasScroll(window.pageYOffset > 50);
+    });
+  }, []);
+
   return (
-    <StyledMenu>
+    <StyledMenu hasScroll={hasScroll}>
       <Container>
         <a href="#">
           <img src={LogoCasaVerde} alt="Casa Verde Logo" />
