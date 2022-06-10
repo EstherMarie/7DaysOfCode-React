@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledComoConseguir = styled.section`
+export const StyledComoConseguir = styled.div`
 	max-width: 995px;
 	width: 100%;
 	height: 440px;
@@ -92,10 +92,14 @@ export const StyledComoConseguir = styled.section`
 
 	@media screen and (max-width: 1000px) {
 		flex-direction: column;
-		min-height: 860px;
+		height: 860px;
 
 		.img-area {
 			width: 100%;
 		}
+	}
+
+	@media screen and (max-width: 768px) {
+		height: 640px;
 	}
 `;
