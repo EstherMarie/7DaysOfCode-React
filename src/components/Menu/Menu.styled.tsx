@@ -4,6 +4,11 @@ interface StyledMenuProps {
   hasScroll: boolean;
 }
 
+interface StyledListProps {
+  isListShowing: boolean;
+  hasScroll: boolean;
+}
+
 export const StyledMenu = styled.header<StyledMenuProps>`
   position: fixed;
   width: 100%;
@@ -22,6 +27,10 @@ export const StyledMenu = styled.header<StyledMenuProps>`
 
   background-color: ${(props) => (props.hasScroll ? "var(--white)" : "")};
 
+  > section {
+    position: relative;
+  }
+
   nav {
     height: 100%;
     display: flex;
@@ -29,7 +38,28 @@ export const StyledMenu = styled.header<StyledMenuProps>`
   }
 `;
 
-export const StyledList = styled.ul`
+export const StyledMenuIcon = styled.button`
+  display: none;
+
+  background-color: transparent;
+  width: 35px;
+  /* height: 30px; */
+
+  cursor: pointer;
+
+  transition: all 0.2;
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
+`;
+
+export const StyledList = styled.ul<StyledListProps>`
   display: flex;
   justify-content: space-between;
 
@@ -43,9 +73,42 @@ export const StyledList = styled.ul`
     margin-left: 38px;
   }
 
+  li:nth-child(-n + 4) {
+    &::after {
+      content: " /";
+    }
+  }
+
   @media (max-width: 992px) {
+    position: absolute;
+    top: 59px;
+    right: 5px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-left: ${(props) =>
+      props.hasScroll ? "1px solid rgba(32, 32, 32, 0.16)" : "none"};
+    border-right: ${(props) =>
+      props.hasScroll ? "1px solid rgba(32, 32, 32, 0.16)" : "none"};
+    border-bottom: ${(props) =>
+      props.hasScroll ? "1px solid rgba(32, 32, 32, 0.16)" : "none"};
+
+    box-shadow: ${(props) =>
+      props.hasScroll ? "10px 10px 30px rgba(0, 0, 0, 0.06)" : "none"};
+
+    background-color: ${(props) => (props.hasScroll ? "var(--white)" : "")};
+
+    display: ${(props) => (props.isListShowing ? "flex" : "none")};
+
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+
     li:nth-child(-n + 4) {
-      display: none;
+      &::after {
+        content: " ";
+      }
     }
   }
 `;
