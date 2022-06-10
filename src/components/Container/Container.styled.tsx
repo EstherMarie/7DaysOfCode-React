@@ -5,6 +5,8 @@ export const StyledContainer = styled.div`
 	max-width: 540px;
 	margin: 0 auto;
 
+	padding: 15px;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -13,11 +15,11 @@ export const StyledContainer = styled.div`
 		max-width: 720px;
 	}
 
-	@media (min-width: 992px) {
+	@media (min-width: 1000px) {
 		max-width: 960px;
 	}
 
-	@media (min-width: 1920px) {
+	@media (min-width: 1520px) {
 		max-width: 1203px;
 	}
 `;
