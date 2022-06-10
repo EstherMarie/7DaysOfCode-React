@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledConheçaNossasOfertas = styled.section`
+export const StyledConheçaNossasOfertas = styled.div`
 	max-width: 1200px;
 	margin: auto;
 	margin-bottom: 153px;
@@ -35,15 +35,11 @@ export const StyledConheçaNossasOfertas = styled.section`
 		justify-content: center;
 		align-items: center;
 		gap: 30px;
-
-		@media screen and (max-width: 1500px) {
-			padding-inline: 15px;
-		}
 	}
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 500px) {
 		h2 {
-			font-size: 80px;
+			font-size: 60px;
 		}
 	}
 `;
