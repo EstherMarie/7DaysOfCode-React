@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const StyledNewsletter = styled.section`
-  width: 585px;
+  max-width: 585px;
+  width: 100%;
   /* height: 462px; */
 
   margin-top: 210px;
@@ -29,7 +30,7 @@ export const StyledNewsletter = styled.section`
     }
 
     p {
-      width: 481px;
+      max-width: 481px;
       margin-top: 24px;
 
       font-family: var(--font-body);
@@ -42,7 +43,7 @@ export const StyledNewsletter = styled.section`
   }
 
   form {
-    width: 585px;
+    max-width: 585px;
     height: 75px;
 
     display: flex;
@@ -108,6 +109,26 @@ export const StyledNewsletter = styled.section`
 
     @media (max-width: 1919px) {
       content: "";
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .text-area {
+      h1 {
+        font-size: 60px;
+      }
+    }
+
+    form {
+      flex-direction: column;
+
+      input,
+      button {
+        width: 100%;
+        margin-top: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
     }
   }
 `;
