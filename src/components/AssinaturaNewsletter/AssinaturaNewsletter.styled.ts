@@ -7,6 +7,8 @@ export const StyledNewsletter = styled.section`
 
   margin-top: 210px;
 
+  position: relative;
+
   .text-area {
     margin-bottom: 37px;
 
@@ -39,6 +41,10 @@ export const StyledNewsletter = styled.section`
       font-size: 16px;
       line-height: 26px;
       opacity: 0.5;
+
+      @media (max-width: 1520px) {
+        max-width: 423px;
+      }
     }
   }
 
@@ -84,32 +90,24 @@ export const StyledNewsletter = styled.section`
     }
   }
 
-  /* Aqui se iniciam as gambiarras... */
-
-  &::before {
-    content: url("/assets/svg/vector.svg");
-    /* width: 1000px; */
+  &::after {
+    content: url("/assets/svg/imagem-hero.svg");
     position: absolute;
-    z-index: -100;
-    top: 0px;
-    right: 0px;
+    top: -205px;
+    left: 362px;
+    z-index: -2;
 
-    @media (max-width: 992px) {
-      top: -90px;
+    @media (max-width: 1520px) {
+      left: 221px;
+    }
+
+    @media (max-width: 1000px) {
+      content: "";
     }
   }
 
-  &::after {
-    content: url("/assets/svg/imagem-hero.svg");
-    width: 787px;
-    position: absolute;
-    top: 0;
-    right: 425px;
-    z-index: -2;
-
-    @media (max-width: 1919px) {
-      content: "";
-    }
+  @media screen and (max-width: 1000px) {
+    margin-top: 160px;
   }
 
   @media screen and (max-width: 500px) {

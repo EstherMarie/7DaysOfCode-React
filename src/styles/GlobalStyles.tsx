@@ -27,6 +27,19 @@ export default createGlobalStyle`
   body {
     background: url('/assets/svg/linhas.svg');
     background-color: #f9f9f9;
+
+    &::before {
+      content: url("/assets/svg/vector.svg");
+      /* width: 1000px; */
+      position: absolute;
+      z-index: -100;
+      top: 0px;
+      right: 0px;
+
+      @media (max-width: 992px) {
+        top: -90px;
+      }
+    }
   }
 
   .sr-only:not(:focus):not(:active) {

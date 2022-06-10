@@ -54,7 +54,7 @@ export const StyledMenuIcon = styled.button`
     height: auto;
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1000px) {
     display: block;
   }
 `;
@@ -62,6 +62,8 @@ export const StyledMenuIcon = styled.button`
 export const StyledList = styled.ul<StyledListProps>`
   display: flex;
   justify-content: space-between;
+
+  transition: all 0.2;
 
   li a {
     margin: 0 1rem;
@@ -79,13 +81,17 @@ export const StyledList = styled.ul<StyledListProps>`
     }
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 1000px) {
     position: absolute;
     top: 59px;
     right: 5px;
 
     padding-top: 10px;
-    padding-bottom: 10px;
+
+    background-color: ${(props) => (props.hasScroll ? "var(--white)" : "")};
+
+    box-shadow: ${(props) =>
+      props.hasScroll ? "10px 10px 30px rgba(0, 0, 0, 0.06)" : "none"};
 
     border-left: ${(props) =>
       props.hasScroll ? "1px solid rgba(32, 32, 32, 0.16)" : "none"};
@@ -94,16 +100,22 @@ export const StyledList = styled.ul<StyledListProps>`
     border-bottom: ${(props) =>
       props.hasScroll ? "1px solid rgba(32, 32, 32, 0.16)" : "none"};
 
-    box-shadow: ${(props) =>
-      props.hasScroll ? "10px 10px 30px rgba(0, 0, 0, 0.06)" : "none"};
-
-    background-color: ${(props) => (props.hasScroll ? "var(--white)" : "")};
-
     display: ${(props) => (props.isListShowing ? "flex" : "none")};
 
     flex-direction: column;
     gap: 10px;
     align-items: end;
+
+    li {
+      width: 100%;
+      padding: 16px 0;
+
+      display: flex;
+      justify-content: flex-end;
+
+      border-bottom: ${(props) =>
+        props.hasScroll ? "1px solid rgba(32, 32, 32, 0.16)" : "none"};
+    }
 
     li:nth-child(-n + 4) {
       &::after {

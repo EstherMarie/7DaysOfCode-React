@@ -37,9 +37,11 @@ export const StyledConheçaNossasOfertas = styled.div`
 		gap: 30px;
 	}
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 1000px) {
 		h2 {
 			font-size: 60px;
+
+			margin-bottom: 25px;
 		}
 	}
 `;
